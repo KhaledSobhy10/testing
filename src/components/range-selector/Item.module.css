@@ -1,0 +1,44 @@
+
+
+.item{
+    width: fit-content;
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(9, 42, 106, 0.933);
+    height: fit-content;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition:transform .03s ,background-color .03s , color .03s;
+    transition-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+ .selected:active{
+    transform: scale(.95);
+}
+
+.notSelected:active{
+    transform: scale(1.03);
+
+}
+
+.selected{
+    background-color: #0837ad;
+    color: white;
+}
+
+.notSelected{
+    background-color: white;
+}
+
+.notAvailable{
+    background-color: rgba(105, 105, 105, 0.539);
+    color: rgb(207, 204, 204);
+    cursor: not-allowed;
+
+}
